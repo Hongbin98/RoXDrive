@@ -1,0 +1,8 @@
+/node_modules/
+/.next/
+/.vinext/
+/dist/
+/out/
+/.wrangler/
+/.env*
+/next-env.d.ts
