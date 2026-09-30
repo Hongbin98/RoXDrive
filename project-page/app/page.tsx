@@ -70,7 +70,9 @@ export default function Home() {
             <span><sup>3</sup> Xi&apos;an University of Electronic Science and Technology (<a href="https://www.xidian.edu.cn/">xidian.edu.cn</a>)</span>
           </div>
           <div className="resource-row">
-            <ResourceButton icon={<BookOpen size={16} />} label="Paper" />
+            <a className="resource-button" href="https://arxiv.org/abs/2609.36851" target="_blank" rel="noreferrer">
+              <BookOpen size={16} /><span>Paper</span><ExternalLink size={13} />
+            </a>
             <a className="resource-button" href="https://github.com/Hongbin98/RoXDrive" target="_blank" rel="noreferrer">
               <Code2 size={16} /><span>Code</span><ExternalLink size={13} />
             </a>
@@ -190,8 +192,4 @@ export default function Home() {
 
 function SectionCard({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return <section className="section-card" id={id}><h2>{title}</h2>{children}</section>;
-}
-
-function ResourceButton({ icon, label }: { icon: ReactNode; label: string }) {
-  return <button className="resource-button" type="button" disabled title={label + ' will be available upon release'}>{icon}<span>{label}</span><small>soon</small></button>;
 }
