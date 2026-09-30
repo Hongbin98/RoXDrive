@@ -1,5 +1,5 @@
 #  🌠RoXDrive
-This is the official project repository for "RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts"
+This is the official project repository for "[RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts](https://arxiv.org/abs/2609.36851)"
 
 https://github.com/user-attachments/assets/87a9b20d-0fe1-4786-84bf-3fcd9b7af69d
 
