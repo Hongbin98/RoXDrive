@@ -87,7 +87,7 @@ export default function Home() {
       <div className="page-shell content-stack">
         <SectionCard id="demo" title="RoXDrive Demo">
           <figure className="overview-demo">
-            <video controls autoPlay muted playsInline loop preload="metadata" aria-label="RoXDrive supplementary overview demo">
+            <video controls controlsList="nodownload" autoPlay muted playsInline loop preload="metadata" aria-label="RoXDrive supplementary overview demo">
               <source src={`${sitePath('/videos/RoXDrive_demo.mp4')}?v=20260929-progress`} type="video/mp4" />
             </video>
           </figure>

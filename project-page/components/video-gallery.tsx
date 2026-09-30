@@ -140,7 +140,7 @@ function DatasetGallery({
           <TabsContent key={video.id} value={video.id} className="video-panel">
             <div className="featured-video-frame">
               {video.stackedSource ? (
-                <video controls autoPlay muted playsInline loop preload="metadata" aria-label={`${video.title}: Original above and RoXDrive below`}>
+                <video controls controlsList="nodownload" autoPlay muted playsInline loop preload="metadata" aria-label={`${video.title}: Original above and RoXDrive below`}>
                   <source src={sitePath(video.src)} type="video/mp4" />
                 </video>
               ) : (
@@ -387,7 +387,7 @@ function InHouseCategory({
           <TabsContent key={video.id} value={video.id} className="video-panel">
             <div className="featured-video-frame">
               {video.stackedSource ? (
-                <video controls autoPlay muted playsInline loop preload="metadata" aria-label={`${video.title}: Original above and RoXDrive below`}>
+                <video controls controlsList="nodownload" autoPlay muted playsInline loop preload="metadata" aria-label={`${video.title}: Original above and RoXDrive below`}>
                   <source src={sitePath(video.src)} type="video/mp4" />
                 </video>
               ) : (
