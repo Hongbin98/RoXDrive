@@ -6,3 +6,4 @@
 /.wrangler/
 /.env*
 /next-env.d.ts
+/public/videos/
