@@ -22,6 +22,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Hongbin98/RoXDrive-media-private
+          ref: main
+          path: roxdrive-private-media
+          ssh-key: ${{ secrets.ROXDRIVE_MEDIA_DEPLOY_KEY }}
+          persist-credentials: false
+      - name: Prepare private media for static export
+        run: |
+          mkdir -p project-page/public/videos
+          cp -a roxdrive-private-media/videos/. project-page/public/videos/
       - uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
         with:
